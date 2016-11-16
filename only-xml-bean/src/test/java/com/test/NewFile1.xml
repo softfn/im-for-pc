@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<message>
+		<color>
+			<array>
+				<array>
+					<string>3</string>
+				</array>
+				<array />
+				<array />
+				<array />
+			</array>
+			<array>
+				<array>
+					<string>5</string>
+					<string>7</string>
+				</array>
+			</array>
+			<array>
+				<array>
+					<string>hhhh</string>
+					<string>g</string>
+					<string>3</string>
+					<string>2</string>
+				</array>
+			</array>
+			<array>
+				<array />
+			</array>
+		</color>
+		<id>0</id>
+		<teamArray>
+			<integer>1</integer>
+			<integer>2</integer>
+		</teamArray>
+		<userArray>
+			<user>
+				<id>0</id>
+			</user>
+			<user>
+				<id>0</id>
+			</user>
+		</userArray>
+	</message>
+</root>

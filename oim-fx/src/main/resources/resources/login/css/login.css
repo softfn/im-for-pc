@@ -1,0 +1,296 @@
+
+#setting-button{
+    -fx-background-image:url( ../images/btn_set_normal.png);
+    -fx-background-color:null;
+    -fx-background-radius: 0;
+}
+
+#setting-button:focused{
+    -fx-background-image:url( ../images/btn_set_normal.png);
+}
+
+#setting-button:hover {
+    -fx-background-image:url( ../images/btn_set_hover.png);
+}
+
+#setting-button:pressed {
+    -fx-background-image:url( ../images/btn_set_press.png);
+}
+
+
+
+#login-button{
+    -fx-background-image:url( ../images/button_login_normal.png);
+    -fx-background-color:null;
+    -fx-background-radius: 0;
+    -fx-font-family: "微软雅黑";
+    -fx-text-fill: white;
+}
+
+#login-button:focused{
+    -fx-background-image:url( ../images/button_login_normal.png);
+}
+
+#login-button:hover {
+    -fx-background-image:url( ../images/button_login_hover.png);
+}
+
+#login-button:pressed {
+    -fx-background-image:url( ../images/button_login_down.png);
+}
+
+/**关闭**/
+#WindowClose {
+    -fx-background-image:url( ../images/btn_close_normal.png);
+    -fx-background-color:null;
+    -fx-background-radius: 0;
+}
+
+#WindowClose:focused{
+    -fx-background-image:url( ../images/btn_close_normal.png);
+}
+
+#WindowClose:hover {
+    -fx-background-image:url("../images/btn_close_highlight.png");
+}
+
+#WindowClose:pressed {
+    -fx-background-image:url("../images/btn_close_down.png");
+}
+
+/**最小化**/
+#WindowMin {
+    -fx-background-image:url( ../images/btn_mini_normal.png);
+    -fx-background-color:null;
+    -fx-background-radius: 0;
+}
+
+#WindowMin:focused{
+    -fx-background-image:url( ../images/btn_mini_normal.png);
+}
+
+#WindowMin:hover {
+    -fx-background-image:url("../images/btn_mini_highlight.png");
+}
+
+#WindowMin:pressed {
+    -fx-background-image:url("../images/btn_mini_down.png");
+}
+
+.empty-text-input-field{
+    -fx-background-color: null;
+    -fx-border-color: null;
+}
+
+.empty-text-input-field:editable {
+    -fx-background-color: null;
+    -fx-border-color: null;
+}
+.empty-text-input-field:focused{
+    -fx-background-color: null;
+    -fx-border-color: null;
+}
+.empty-text-input-field:hover {
+    -fx-background-color: null;
+    -fx-border-color: null;
+}
+.empty-text-input-field:pressed {
+    -fx-background-color: null;
+    -fx-border-color: null;
+}
+
+#account-input {
+    -fx-background-color:null;
+    -fx-background-radius: 0;
+    -fx-border-color: null;
+    -fx-background-image :url( ../images/edit_frame_normal_reversed.png);
+    -fx-border-insets: 2,2,2,2;
+    -fx-border-image-insets:  2,2,2,2;
+
+}
+
+#account-input:editable {
+    -fx-background-image :url( ../images/edit_frame_normal_reversed.png);
+}
+
+#account-input:focused{
+    -fx-background-image:url( ../images/edit_frame_hover_reversed.png);
+}
+
+#account-input:hover {
+    -fx-background-image:url("../images/edit_frame_hover_reversed.png");
+}
+
+#account-input:pressed {
+    -fx-background-image:url("../images/edit_frame_hover_reversed.png");
+}
+/*****/
+
+#combo-box-button{
+    -fx-background-image :url( ../images/login_inputbtn_normal.png);
+    -fx-background-size: 20,20;
+    -fx-background-color:null;
+    -fx-background-radius: 0;
+}
+#combo-box-button:focused{
+    -fx-background-image:url( ../images/login_inputbtn_normal.png);
+}
+
+#combo-box-button:hover {
+    -fx-background-image:url("../images/login_inputbtn_highlight.png");
+}
+
+#combo-box-button:pressed {
+    -fx-background-image:url("../images/login_inputbtn_down.png");
+}
+
+
+
+
+#password-button{
+    -fx-background-fills:15,15;
+    -fx-background-image :url( ../images/keyboard_normal.png);
+    -fx-background-insets: 5,5,5,5;
+    -fx-background-color:null;
+    -fx-background-radius: 0;
+}
+#password-button:focused{
+    -fx-background-image:url( ../images/keyboard_normal.png);
+}
+
+#password-button:hover {
+    -fx-background-image:url("../images/keyboard_hover.png");
+}
+
+#password-button:pressed {
+    -fx-background-image:url("../images/keyboard_down.png");
+}
+
+/***********************************************************************/
+#password-input {
+    -fx-background-image :url( ../images/edit_frame_normal.png);
+}
+
+#password-input:focused{
+    -fx-background-image:url( ../images/edit_frame_hover.png);
+}
+
+#password-input:hover {
+    -fx-background-image:url("../images/edit_frame_hover.png");
+}
+
+#password-input:pressed {
+    -fx-background-image:url("../images/edit_frame_hover.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+#add-account-button {
+    -fx-background-image:url( ../images/switch_single_normal.png);
+    -fx-background-color:null;
+    -fx-background-radius: 0;
+}
+
+#add-account-button:focused{
+    -fx-background-image:url( ../images/switch_single_normal.png);
+}
+
+#add-account-button:hover {
+    -fx-background-image:url("../images/switch_single_hover.png");
+}
+
+#add-account-button:pressed {
+    -fx-background-image:url("../images/switch_single_down.png");
+}
+
+
+
+
+
+
+#tow-code-button {
+    -fx-background-image:url( ../images/corner_right_normal_breath.png);
+    -fx-background-color:null;
+    -fx-background-radius: 0;
+}
+
+#tow-code-button:focused{
+    -fx-background-image:url( ../images/corner_right_normal_breath.png);
+}
+
+#tow-code-button:hover {
+    -fx-background-image:url("../images/corner_right_hover.png");
+}
+
+#tow-code-button:pressed {
+    -fx-background-image:url("../images/corner_right_normal_down.png");
+}
+
+#status-button{
+    -fx-border-color: null;
+}
+
+#status-button:hover {
+    -fx-border-color: #888888;
+    -fx-border-radius: 3;
+}
+
+#status-button:pressed {
+    -fx-border-color: #888888;
+    -fx-border-radius: 3;
+}
+
+
+
+.check-box {
+    -fx-border-radius: 0;
+    -fx-text-fill: #888888;
+}
+/*
+
+.box {
+    -fx-background-color:null;
+    -fx-background-image: url( ../images/checkbox_normal.png);
+    -fx-padding: 0.3em;  3 -- padding from the outside edge to the mark 
+}
+
+.check-box .box {
+    -fx-background-color:null;
+    -fx-background-image: url( ../images/checkbox_normal.png);
+    -fx-padding: 0.3em;  3 -- padding from the outside edge to the mark 
+}
+
+.check-box:focused .box {
+    -fx-background-image: url( ../images/checkbox_pushed.png);
+    -fx-background-color: null;
+}
+
+.check-box:hover .box {
+    -fx-background-image: url( ../images/checkbox_hightlight.png);
+    -fx-background-color: null;
+
+}
+.check-box:armed .box {
+    -fx-color: -fx-pressed-base;
+}
+
+.check-box .mark {
+    -fx-background-color: null;
+    -fx-padding: 0.333em;  4 -- this is half the size of the mark 
+}
+
+.check-box:indeterminate .mark {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+}*/

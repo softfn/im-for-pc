@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+
+<title></title>
+<meta charset="utf-8">
+<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	function insertHtml(html) {
+		$("#container").append(html);
+	}
+	
+	function systemOut() {
+		window.app.exit();
+	}
+</script>
+</head>
+
+<body>
+	<div id="container"></div>
+	<div>
+            <input type="button" value="in" onclick="systemOut();"/>
+        </div>
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<body>
+	<space name="demo">
+		<query name="add" type="sql">
+			<content>
+                <![CDATA[
+                    insert into demo(id,name,mark)
+                    values(:id,:name,:mark)
+                ]]>
+			</content>
+		</query>
+
+		<query name="queryList" type="sql">
+			<resultList>
+				<result column="id" type="string" />
+				<result column="name" type="string" />
+				<result column="account" type="string" />
+				<result column="password" type="string" />
+				<result column="nickname" type="string" />
+			</resultList>
+			<content>
+                <![CDATA[
+                    select 
+                            u.id id,
+                            u.name name,
+                            u.account account,
+                            u.password password,
+                            u.nickname nickname
+                    from m_user u
+                    where 1=1
+                    <#if name?? && ''!=name>
+                    	and u.name like %:name%
+                    </#if>
+                    <#if outIds?? && ''!=outIds>
+                    	and u.id not in( :outIds )
+                    </#if>
+                    order by id
+                ]]>
+			</content>
+		</query>
+	</space>
+	<space name="test">
+		<query name="queryList" type="sql">
+			<resultList>
+				<result column="id" type="string" />
+				<result column="name" type="string" />
+				<result column="introduce" type="string" />
+			</resultList>
+			<content>
+                <![CDATA[
+                    select 
+                            r.id id,
+                            r.name name,
+                            r.introduce introduce
+                    from m_role r
+                    where 1=1
+                    
+                    <#if name?? && ''!=name>
+                    	and r.name like %:name%
+                    </#if>
+                    
+                    <#if introduce?? && ''!=introduce>
+                    	and r.introduce like :introduce
+                    </#if>
+                    
+                    <#if outIds?? && ''!=outIds>
+                    	and r.id not in( :outIds )
+                    </#if>
+                    
+                    order by id
+                ]]>
+			</content>
+		</query>
+
+
+		<query name="update" type="sql">
+			<content>
+                <![CDATA[
+                    update role set 
+                    <#assign sql=""><#-- 定义一个变量"sql" -->
+					<#if name?? && ''!=name>
+						<#assign sql="${sql},name=:name">
+                    </#if>
+                    <#if introduce?? && ''!=introduce>
+                    	<#assign sql="${sql},introduce = :introduce">
+                    </#if>
+                    <#if sex?? && ''!=sex>
+                    	<#assign sql="${sql},sex = :sex">
+                    </#if>
+                    <#if head?? && ''!=head>
+                    	<#assign sql="${sql},head = :head">
+                    </#if>
+                    <#if super?? && ''!=super>
+                    	<#assign sql="${sql},super = :super">
+                    </#if>
+                    <#if sql?? && ''!=sql>
+                    	${sql?substring(1)}<#-- 截取掉最前面的"," -->
+                    </#if>
+                    where id=:id
+                ]]>
+			</content>
+		</query>
+	</space>
+</body>

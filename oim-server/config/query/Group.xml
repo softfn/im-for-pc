@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<body>
+	<space name="group">
+		<query name="queryGroupList" type="sql">
+			<resultList>
+				<result column="id" type="string" />
+				<result column="number" type="int" />
+                <result column="name" type="string" />
+                <result column="head" type="string" />
+                <result column="headType" type="string" />
+                <result column="remarks" type="string" />
+                <result column="classification" type="string" />
+                <result column="publicNotice" type="string" />
+                <result column="introduce" type="string" />
+                <result column="position" type="string" />
+            </resultList>
+            <content>
+                <![CDATA[
+                    select  g.id,
+							g.number,
+							g.name,
+							g.head,
+							g.headType,
+							g.remarks,
+							g.classification,
+							g.publicNotice,
+							g.introduce,
+							g.position
+                    from im_group g
+                    where 1=1
+                    
+                    <#if queryText?? && ''!=queryText>
+		            	and (		
+		            		g.name like :queryText  or 
+		            		g.introduce like :queryText or 
+		            		g.publicNotice like :queryText
+                     	<#if number?? && ''!=number>
+                    		or g.number = :number 
+                		</#if>
+							)
+		            </#if>
+		            <#if classification?? && ''!=classification>
+						and g.classification = :classification
+					</#if>
+		            
+                ]]>
+                order by id
+            </content>
+        </query>
+    </space>
+</body>

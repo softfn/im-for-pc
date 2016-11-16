@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root><connectConfigData><businessAddress>127.0.0.1</businessAddress><businessPort>12010</businessPort><fileServerPort>12020</fileServerPort><httpPort>8080</httpPort></connectConfigData></root>

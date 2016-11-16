@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.onlyxiahui.org/schema/query"
+			elementFormDefault="qualified"
+			attributeFormDefault="unqualified">
+	
+	<!-- <xsd:element name="body">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="space" type="spaceType" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="spaceType">
+		<xsd:attribute name="name" type="xsd:string" />
+		<xsd:sequence>
+			<xsd:element name="query" type="queryType" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="queryType">
+		<xsd:sequence>
+			<xsd:element name="resultList" type="resultList" />
+			<xsd:element name="content" type="contentType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="resultList">
+		<xsd:sequence>
+			<xsd:element name="result" type="resultType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="resultType">
+		<xsd:attribute name="column" type="xsd:string" />
+		<xsd:attribute name="type" use="required">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="string" />
+					<xsd:enumeration value="integer" />
+					<xsd:enumeration value="boolean" />
+					<xsd:enumeration value="date" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="contentType">
+		<xsd:sequence>
+			<xsd:element name="option" type="optionType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="optionType">
+		<xsd:attribute name="name" type="xsd:string" />
+		<xsd:attribute name="allowNull">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="false" />
+					<xsd:enumeration value="true" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="allowEmpty">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="false" />
+					<xsd:enumeration value="true" />
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType> -->
+</xsd:schema>
+
+
